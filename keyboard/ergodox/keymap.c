@@ -85,6 +85,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "keymap_micro.h"
 #elif defined(KEYMAP_CUB)
 #include "keymap_cub.h"
+#elif defined(KEYMAP_AZERTY)
+#include "keymap_azerty.h"
 #else
 
 static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -219,7 +221,9 @@ uint8_t keymap_key_to_keycode(uint8_t layer, keypos_t key)
 }
 
 #if defined(KEYMAP_CUB)
+// function keymap_fn_to_action will be defined in keymap_cub.h
 
+#elif defined(KEYMAP_AZERTY)
 // function keymap_fn_to_action will be defined in keymap_cub.h
 
 #else

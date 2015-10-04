@@ -137,4 +137,6 @@ micro: all
 cub: OPT_DEFS += -DKEYMAP_CUB
 cub: all
 
+azerty: OPT_DEFS += -DKEYMAP_AZERTY
+azerty: all
 
